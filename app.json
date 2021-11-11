@@ -1,0 +1,30 @@
+{
+    "name": "twingate-connector",
+    "env": {
+        "TENANT_URL": {
+            "description": "Twingate URL",
+            "value": "#fefefe",
+            "required": true,
+            "order": 10
+        },
+        "ACCESS_TOKEN": {
+            "description": "Access token",
+            "required": true,
+            "order": 20
+        },
+        "REFRESH_TOKEN": {
+            "description": "Refresh token",
+            "required": true,
+            "order": 30
+        },
+        "TWINGATE_LABEL_HOSTNAME": {
+            "description": "Name",
+            "order": 40
+        }
+    },
+    "options": {
+        "allow-unauthenticated": false,
+        "memory": "2048Mi",
+        "cpu": "2"
+    }
+}
