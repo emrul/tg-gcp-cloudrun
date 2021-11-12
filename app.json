@@ -26,5 +26,12 @@
         "allow-unauthenticated": false,
         "memory": "2048Mi",
         "cpu": "2"
+    },
+    "hooks": {
+        "postcreate": {
+            "commands": [
+                "gcloud beta run services update twingate-connector --no-cpu-throttling"
+            ]
+        }
     }
 }
